@@ -1,5 +1,9 @@
+#!/usr/bin/python3
+#SPDX-FileCopyrightText: 2023 Mahiro Sudoh
+#SPDX-License-Identifier: BSD-3-Clause
+
 from setuptools import find_packages, setup
-import os                  #追加
+import os
 from glob import glob   
 
 package_name = 'mypkg'
