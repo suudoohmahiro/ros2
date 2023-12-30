@@ -1,8 +1,20 @@
 ## レポジトリについて
 * ロボットシステム学のros2の練習レポジトリ
 
+## ダウンロード方法
+* ターミナルで以下を実行
+```
+$ git clone https://github.com/suudoohmahiro/ros2
+```
+```
+$ cd ros2
+```
+
+## 概要
+* talkerというノードでパブリッシュしてlistenerというノードでサブスクライバしている.
+
 ## テスト環境
-* Ubuntu 22.04.3 LTS
+* Ubuntu 22.04 LTS
 
 ## Author
 * Mahiro Sudoh
