@@ -41,9 +41,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 
 ## 実行結果
+### talker.py & listener.py
 * 以下のように出力される
 ```
-### talker.py & listener.py
 1. ターミナル上で以下を実行
 [INFO] [1703996405.851544662] [listener]: Listen: 11
 [INFO] [1703996406.343763013] [listener]: Listen: 12
@@ -62,10 +62,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 [INFO] [1703996412.843639754] [listener]: Listen: 25
 ```
 ***
-
+### talk_listen.launch.py
 * 以下のように出力される
 ```
-### talk_listen.launch.py
 [listener-2] [INFO] [1703997617.804226043] [listener]: Listen: 0
 [listener-2] [INFO] [1703997618.296265194] [listener]: Listen: 1
 [listener-2] [INFO] [1703997618.795788629] [listener]: Listen: 2
