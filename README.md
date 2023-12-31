@@ -33,7 +33,7 @@ $ ros2 run mypkg listener
 
 ***
 ### talk_listen.launch.py
-1. ターミナルで以下を実行(launch)
+1. ターミナルで以下を実行
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
