@@ -1,4 +1,5 @@
 ## レポジトリについて
+![test](https://github.com/suudoohmahiro/ros2/actions/workflows/test.yml/badge.svg)
 * ロボットシステム学のros2の練習レポジトリ
 
 ## ダウンロード方法
@@ -8,16 +9,18 @@ $ git clone https://github.com/suudoohmahiro/ros2
 ```
 
 ## 概要
-* talkerというノードでパブリッシュしてlistenerというノードでサブスクライバしている.
+* talkerというノードでパブリッシュしてlistenerというノードでサブスクライブしている.
+* メッセージの型は16ビット符号つき整数 
 #### talker.py
-* countupというトピックからメッセージを送信する
+* countupというトピックを通じてメッセージを送信する
 #### listener.py 
-* countupというトピックからメッセージを受け取る
+* countupというトピックを通じてメッセージを受け取る
 #### talk_listen.launch.py
 * 上記2つのノードを一度に立ち上げることが出来る
 
 ## 実行方法
-1. ターミナル上で以下を実行(talker&listener)
+### talker.py & listener.py
+1. ターミナル上で以下を実行
 ```
 $ ros2 run mypkg talker
 ```
@@ -29,7 +32,7 @@ $ ros2 run mypkg listener
 4. ``` Ctrl + c ``` で終了
 
 ***
-
+### talk_listen.launch.py
 1. ターミナルで以下を実行(launch)
 ```
 $ ros2 launch mypkg talk_listen.launch.py
