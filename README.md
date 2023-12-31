@@ -17,7 +17,7 @@ $ git clone https://github.com/suudoohmahiro/ros2
 * 上記2つのノードを一度に立ち上げることが出来る
 
 ## 実行方法
-1. ターミナル上で以下を実行
+1. ターミナル上で以下を実行(talker&listener)
 ```
 $ ros2 run mypkg talker
 ```
@@ -30,7 +30,7 @@ $ ros2 run mypkg listener
 
 ***
 
-1. ターミナルで以下を実行
+1. ターミナルで以下を実行(launch)
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
@@ -38,7 +38,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 
 ## 実行結果
-* 以下のように出力される
+* 以下のように出力される(talker&listener)
 ```
 [INFO] [1703996405.851544662] [listener]: Listen: 11
 [INFO] [1703996406.343763013] [listener]: Listen: 12
@@ -58,7 +58,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 ***
 
-* 以下のように出力される
+* 以下のように出力される(launch)
 ```
 [listener-2] [INFO] [1703997617.804226043] [listener]: Listen: 0
 [listener-2] [INFO] [1703997618.296265194] [listener]: Listen: 1
