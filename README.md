@@ -41,7 +41,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 
 ## 実行結果
-* 以下のように出力される(talker&listener)
+* 以下のように出力される
 ```
 [INFO] [1703996405.851544662] [listener]: Listen: 11
 [INFO] [1703996406.343763013] [listener]: Listen: 12
@@ -61,7 +61,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 ***
 
-* 以下のように出力される(launch)
+* 以下のように出力される
 ```
 [listener-2] [INFO] [1703997617.804226043] [listener]: Listen: 0
 [listener-2] [INFO] [1703997618.296265194] [listener]: Listen: 1
