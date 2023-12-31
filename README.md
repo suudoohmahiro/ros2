@@ -6,15 +6,51 @@
 ```
 $ git clone https://github.com/suudoohmahiro/ros2
 ```
-```
-$ cd ros2
-```
 
 ## 概要
 * talkerというノードでパブリッシュしてlistenerというノードでサブスクライバしている.
+#### talker.py
+* countupというトピックからメッセージを送信する
+#### listener.py 
+* countupというトピックからメッセージを受け取る
+#### talk_listen.launch.py
+* 上記2つのノードを一度に立ち上げることが出来る
+
+## 実行方法
+1. ターミナル上で以下を実行
+```
+$ ros2 run mypkg talker
+```
+1. 他のターミナルを立ち上げる
+1. ターミナルで以下を実行
+```
+$ ros2 run mypkg listener
+```
+1. ``` Ctrl + c ``` で終了
+## 実行結果
+* 以下のように出力される
+```
+[INFO] [1703996405.851544662] [listener]: Listen: 11
+[INFO] [1703996406.343763013] [listener]: Listen: 12
+[INFO] [1703996406.844056282] [listener]: Listen: 13
+[INFO] [1703996407.343960938] [listener]: Listen: 14
+[INFO] [1703996407.843923728] [listener]: Listen: 15
+[INFO] [1703996408.343911225] [listener]: Listen: 16
+[INFO] [1703996408.843936536] [listener]: Listen: 17
+[INFO] [1703996409.343826739] [listener]: Listen: 18
+[INFO] [1703996409.844303510] [listener]: Listen: 19
+[INFO] [1703996410.344059873] [listener]: Listen: 20
+[INFO] [1703996410.842737783] [listener]: Listen: 21
+[INFO] [1703996411.343298745] [listener]: Listen: 22
+[INFO] [1703996411.842442363] [listener]: Listen: 23
+[INFO] [1703996412.343708412] [listener]: Listen: 24
+[INFO] [1703996412.843639754] [listener]: Listen: 25
+```
+
 
 ## テスト環境
 * Ubuntu 22.04 LTS
+* ROS2 Humble
 
 ## Author
 * Mahiro Sudoh
