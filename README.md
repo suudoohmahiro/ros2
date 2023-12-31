@@ -21,12 +21,22 @@ $ git clone https://github.com/suudoohmahiro/ros2
 ```
 $ ros2 run mypkg talker
 ```
-1. 他のターミナルを立ち上げる
-1. ターミナルで以下を実行
+2. 他のターミナルを立ち上げる
+3. ターミナルで以下を実行
 ```
 $ ros2 run mypkg listener
 ```
-1. ``` Ctrl + c ``` で終了
+4. ``` Ctrl + c ``` で終了
+
+***
+
+1. ターミナルで以下を実行
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+2. ``` Ctrl + c ```で終了
+
+
 ## 実行結果
 * 以下のように出力される
 ```
@@ -46,7 +56,22 @@ $ ros2 run mypkg listener
 [INFO] [1703996412.343708412] [listener]: Listen: 24
 [INFO] [1703996412.843639754] [listener]: Listen: 25
 ```
+***
 
+* 以下のように出力される
+```
+[listener-2] [INFO] [1703997617.804226043] [listener]: Listen: 0
+[listener-2] [INFO] [1703997618.296265194] [listener]: Listen: 1
+[listener-2] [INFO] [1703997618.795788629] [listener]: Listen: 2
+[listener-2] [INFO] [1703997619.296747493] [listener]: Listen: 3
+[listener-2] [INFO] [1703997619.796728751] [listener]: Listen: 4
+[listener-2] [INFO] [1703997620.296696896] [listener]: Listen: 5
+[listener-2] [INFO] [1703997620.796857864] [listener]: Listen: 6
+[listener-2] [INFO] [1703997621.295603097] [listener]: Listen: 7
+[listener-2] [INFO] [1703997621.795624590] [listener]: Listen: 8
+[listener-2] [INFO] [1703997622.296458339] [listener]: Listen: 9
+[listener-2] [INFO] [1703997622.796840197] [listener]: Listen: 10
+```
 
 ## テスト環境
 * Ubuntu 22.04 LTS
