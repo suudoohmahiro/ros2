@@ -11,15 +11,15 @@ $ git clone https://github.com/suudoohmahiro/ros2
 ## 概要
 * talkerというノードでパブリッシュしてlistenerというノードでサブスクライブしている.
 * メッセージの型は16ビット符号つき整数 
-#### talker.py
+#### talker
 * countupというトピックを通じてメッセージを送信する
-#### listener.py 
+#### listener 
 * countupというトピックを通じてメッセージを受け取る
 #### talk_listen.launch.py
 * 上記2つのノードを一度に立ち上げることが出来る
 
 ## 実行方法
-### talker.py & listener.py
+### talker & listener
 1. ターミナル上で以下を実行
 ```
 $ ros2 run mypkg talker
@@ -41,10 +41,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 
 ## 実行結果
-### talker.py & listener.py
+### talker & listener
 * 以下のように出力される
 ```
-1. ターミナル上で以下を実行
 [INFO] [1703996405.851544662] [listener]: Listen: 11
 [INFO] [1703996406.343763013] [listener]: Listen: 12
 [INFO] [1703996406.844056282] [listener]: Listen: 13
